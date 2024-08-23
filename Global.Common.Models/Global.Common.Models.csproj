@@ -8,33 +8,33 @@
     <Nullable>enable</Nullable>
 	<Title>Global.Common.Features.Models</Title>
 	<PackageId>Global.Common.Features.Models</PackageId>
-	<Version>0.1.0</Version>
+	<Version>0.1.1-beta.1</Version>
 	<Authors>Cesar Palomino Vila</Authors>
-	  <Description>
-		  This project contains several features that provide functionalities to support and enhance development.
-		  One important feature is that it contains a generic response hierarchy, which allows you to manage your development in the most common scenarios.
-		  This is a beta version and has not been thoroughly tested or recommended for use in production environments.
-	  </Description>
+	  <Description>This project contains several features that provide functionalities to support and enhance development. One important feature is that it contains a generic response hierarchy, which allows you to manage your development in the most common scenarios. This is a beta version and has not been thoroughly tested or recommended for use in production environments. All methods are documented.</Description>
 	  <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
-	  <PackageProjectUrl>https://github.com/cesarpv27/Global.Common.Models-beta.1</PackageProjectUrl>
+	  <PackageProjectUrl></PackageProjectUrl>
 	  <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 	  <RepositoryUrl>https://github.com/cesarpv27/Global.Common.Models-beta.1</RepositoryUrl>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <Copyright>Copyright (c) 2024 Cesar Palomino Vila. Licensed under the BSD-3-Clause.</Copyright>
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 	  <PackageReleaseNotes>
+		  ### Fixed
+		  - v0.1.1-beta.1 The description has been fixed in the documentation.
+		  - v0.1.1-beta.1 Global.Common.Features has been updated to Version="0.1.2-beta.1".
+
 		  ### Added
 		  - v0.1.0 Generic responses hierarchy.
 	  </PackageReleaseNotes>
   </PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\README.md" Pack="true" PackagePath="\" />
-		<None Include="..\CHANGELOG.md" Pack="true" PackagePath="\" />
+		<None Include="docs\README.md" Pack="true" PackagePath="\"/>
+		<None Include="docs\CHANGELOG.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Global.Common.Features" Version="0.1.0" />
+	  <PackageReference Include="Global.Common.Features" Version="0.1.2-beta.1" />
 	</ItemGroup>
 
 	<Target Name="PostPack" AfterTargets="Pack">
